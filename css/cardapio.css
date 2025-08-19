@@ -1,0 +1,153 @@
+/*Fonte padrão*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Tiny5", sans-serif;
+    background-color: #433F3F;
+    color: white;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #088410;
+    padding: 20px 40px;
+}
+
+.logo {
+    padding: 0px 150px;
+    font-size: 1.8rem;          
+    font-style: italic;          
+    color: white;
+    display: inline-block;       
+    letter-spacing: 2px;         
+    transform: scaleX(1.3);     
+    transition: transform 0.3s;  
+}
+
+.logo:hover {
+    transform: scaleX(1.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Botões da Barra de Navegação*/
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    background: #006400;
+    padding: 15px 50px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+}
+nav a:hover{
+    transform: scaleX(1.15);
+    background: #024102;
+}
+
+nav a.ativo {
+    background: white;
+    color: #037422;
+}
+
+nav a.ativo:hover{
+    transform: scaleX(1);
+}
+
+/*Título do Cardápio*/
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 3px; 
+    transition: transform 0.3s; 
+}
+
+/*Títulos dos tipos de Comida no Cardápio*/
+.tipagem{
+    margin-left: 90px;
+    font-size: 35px;
+}
+
+#populares, #semanal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.comidas {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between; 
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    background-color: #066C0D;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.comidas img {
+    width: 140px;
+    height: 140px;
+}
+
+.comidas h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    min-height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comidas p {
+    background-color: white;
+    color: #088410;
+    font-size: 30px;
+    width: 113%;
+    height: 50px;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    margin: -15px;
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    background: #008000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a {
+    color: white;
+    font-size: 1.6rem;
+    margin: 0 12px;
+    transition: 0.3s;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #222;
+    transform: scale(1.25, 1.25);
+}

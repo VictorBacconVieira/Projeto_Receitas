@@ -1,0 +1,176 @@
+/*Fonte padrão*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Tiny5", sans-serif;
+    background-color: #433F3F;
+    color: white;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #088410;
+    padding: 20px 40px;
+}
+
+.logo {
+    padding: 0px 150px;
+    font-size: 1.8rem;          
+    font-style: italic;          
+    color: white;
+    display: inline-block;       
+    letter-spacing: 2px;         
+    transform: scaleX(1.3);     
+    transition: transform 0.3s;  
+}
+
+.logo:hover {
+    transform: scaleX(1.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Botões da Barra de Navegação*/
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    background: #006400;
+    padding: 15px 50px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+}
+nav a:hover{
+    transform: scaleX(1.15);
+    background: #024102;
+}
+
+nav a.ativo {
+    background: white;
+    color: #037422;
+}
+
+nav a.ativo:hover{
+    transform: scaleX(1);
+}
+
+/* Conteúdo principal */
+main {
+    text-align: center;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: #32cd32;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.titulo:hover{
+    transform: scaleX(1.4);
+}
+
+.texto {
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Botão do Cardápio*/
+.btn {
+    display: inline-block;
+    background: #00c000;
+    padding: 14px 36px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #047504;
+    transform: scaleX(1.2);
+}
+
+/* Imagens laterais */
+.decor-esquerda,
+.decor-direita {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*Distância geral das imagens da Esquerda*/
+.decor-esquerda {
+    left: 50px;
+}
+
+.decor-esquerda img:nth-child(1) { margin-left: 250px; }
+.decor-esquerda img:nth-child(2) { margin-left: 0px; }
+.decor-esquerda img:nth-child(3) { margin-left: 80px; }
+.decor-esquerda img:nth-child(4) { margin-left: 270px; }
+
+/*Distância geral das imagens da Esquerda*/
+.decor-direita {
+    right: 10px;
+}
+
+.decor-direita img:nth-child(1) { margin-right: 350px; } /*Esse primeiro dita até onde vão as imagens da direita no geral, por isso usa o right*/
+.decor-direita img:nth-child(2) { margin-left: 250px; }/*O resto segue com base até onde esse limite foi imposto, por isso usam o left*/
+.decor-direita img:nth-child(3) { margin-left: 300px; }
+.decor-direita img:nth-child(4) { margin-left: 50px; }
+
+/*Imagens*/
+.decor-esquerda img, .decor-direita img {
+    width: 150px;   
+    height: auto;
+    border-radius: 8px;
+}
+
+/*Decorações das Imagens*/
+.decor-esquerda img:hover, .decor-direita img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.3s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #008000;
+    padding: 25px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.social a {
+    color: white;
+    font-size: 1.6rem;
+    margin: 0 12px;
+    transition: 0.3s;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #222;
+    transform: scale(1.25, 1.25);
+}
